@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+POST=`date +%F`-$*.markdown
+
+cat >> _posts/$POST << EOF
+---
+layout: post
+title:	""
+date:	`date "+%F %T"`
+categories:
+---
+EOF
